@@ -1,3 +1,5 @@
+import { MdAddLocation } from "react-icons/md";
+import { MdCurrencyExchange } from "react-icons/md";
 
 const Job = ({ job }) => {
 
@@ -13,6 +15,12 @@ const Job = ({ job }) => {
                     <button className="text-[#7E90FE] px-5 py-2 font-bold border rounded border-[#7E90FE] mr-4">{remote_or_onsite}</button>
                     <button className="text-[#7E90FE] px-5 py-2 font-bold border rounded border-[#7E90FE] mr-4">{job_type}</button>
                 </div>
+
+                <div className="flex gap-10 items-center">
+                    <h2 className="flex "><MdAddLocation  className="text-2xl mr-2"/> {location} </h2>
+                    <h2 className="flex"><MdCurrencyExchange className="text-2xl mr-2" /> {salary} </h2>
+                </div>
+
                 <div className="card-actions ">
                     <button className="btn btn-primary">View Details</button>
                 </div>
